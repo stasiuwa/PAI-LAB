@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+<div id="kontener">
+    <div id="banner">   <h1>Szybki kurs HTML</h1>   </div>
+    <div id="menu">
+        <a href="index.html"> Podstawowe znaczniki</a>&nbsp;
+        <a href="tabele.html"> Tworzenie tabel</a>&nbsp;
+        <a href="formularze.html"> Budowa formularzy</a>
+    </div>
+    <div id="tresc">
+        <h2>Podstawowe znaczniki formularza HTML to:</h2>
+        <ul>
+            <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+            <li>&lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pola tekstowe, przycisk typu radio, przycisk typu checkbox) w zależnosci od wartości jego atrybutu type</li>
+            <li>&lt;select&gt; - pole formularza typu lista rozwijana</li>
+            <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+            <li>&lt;button&gt; -  pole formularza typu przycisk</li>
+        </ul>
+        <h3>Przykładowy formularz HTML:</h3>
+        <form action="mailto:s97765@pollub.edu.pl" method="post">
+            <label for="surname">Nazwisko:</label>
+            &emsp;&nbsp;<input type="text" id="surname" name="surname" size="20">
+            <br>
+            <label for="age">Wiek:</label>
+            &emsp;&emsp;&emsp;<input type="number" id="age" name="age" size="20">
+            <br>
+            <label for="country">Państwo:</label>
+            &emsp;&ensp;&nbsp;
+            <select name="country" id="country">
+                <option value="poland">Polska</option>
+                <option value="germany">Niemcy</option>
+                <option value="france">Francja</option>
+            </select>
+            <br>
+            <label for="email1">Adres e-mail:</label>
+            <input type="email" id="email1" name="email" size="20">
+            <br>
+
+            <h4>Zamawiam tutorial z języka:</h4>
+            <input type="checkbox" id="checkbox1" name="lang" value="PHP">
+            <label for="checkbox1">PHP</label>
+            <input type="checkbox" id="checkbox2" name="lang" value="C/C++">
+            <label for="checkbox2">C/C++</label>
+            <input type="checkbox" id="checkbox3" name="lang" value="Java">
+            <label for="checkbox3">Java</label>
+            <br>
+
+            <h4>Sposób zapłaty: </h4>
+            <input type="radio" id="radio1" name="payment" value="blik">
+            <label for="radio1">BLIK</label>
+            <input type="radio" id="radio2" name="payment" value="visa">
+            <label for="radio2">VISA</label>
+            <input type="radio" id="radio3" name="payment" value="bank">
+            <label for="radio3">przelewy24</label>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Anuluj">
+            </p>
+        </form>
+    </div>
+    <br>
+    <div id="stopka">&copy;PW</div>
+</div>
+</body>
+</html>

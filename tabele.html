@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+<div id="kontener">
+    <div id="banner">   <h1>Szybki kurs HTML</h1>   </div>
+    <div id="menu">
+        <a href="index.html"> Podstawowe znaczniki</a>&nbsp;
+        <a href="tabele.html"> Tworzenie tabel</a>&nbsp;
+        <a href="formularze.html"> Budowa formularzy</a>
+    </div>
+    <div id="tresc">
+        <h2>Podstawowe znaczniki do tworzenia tabel to:</h2>
+        <ul>
+            <li>&lt;table&gt; - znacznik zawierający całą tabelę </li>
+            <li>&lt;caption&gt; - tytuł tabeli </li>
+            <li>&lt;thead&gt; - nagłówek tabeli </li>
+            <li>&lt;tbody&gt; - zawartość tabeli</li>
+            <li>&lt;tfoot&gt; - stopka tabeli</li>
+            <li>&lt;tr&gt; - wiersz tabeli</li>
+            <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+            <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zwartaw wierszu)</li>
+        </ul>
+        <h3>Przykładowa tabela HTML</h3>
+        <br>
+        <table border="1"> <!-- border - przestarzały atrybut, zadziała jak dodamy style -->
+            <caption>Popularność języków programowania</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Język programowania</th>
+                    <th colspan="2">Pozycja</th>
+                </tr>
+                <tr>
+                    <th>luty 2023</th>
+                    <th>luty 2022</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Na podstawie:<br> <a href="https://www.tiobe.com/tiobe-index">https://www.tiobe.com/tiobe-index</a></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="stopka"><br>&copy;PW</div>
+</div>
+</body>
+</html>
