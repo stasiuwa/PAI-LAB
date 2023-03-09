@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet"  href="CSS/style.css"    type="text/css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,48 +24,50 @@
             <li>&lt;button&gt; -  pole formularza typu przycisk</li>
         </ul>
         <h3>Przykładowy formularz HTML:</h3>
+        <p>
         <form action="mailto:s97765@pollub.edu.pl" method="post">
-            <label for="surname">Nazwisko:</label>
-            &emsp;&nbsp;<input type="text" id="surname" name="surname" size="20">
+            <p>
+            <label class="form1" for="surname">Nazwisko:</label>
+            <input class="input1" type="text" id="surname" name="surname" size="20">
             <br>
-            <label for="age">Wiek:</label>
-            &emsp;&emsp;&emsp;<input type="number" id="age" name="age" size="20">
+            <label class="form1" for="age">Wiek:</label>
+            <input class="input1"  type="number" id="age" name="age" size="20">
             <br>
-            <label for="country">Państwo:</label>
-            &emsp;&ensp;&nbsp;
-            <select name="country" id="country">
+            <label class="form1" for="country">Państwo:</label>
+            <select class="input1"  name="country" id="country">
                 <option value="poland">Polska</option>
                 <option value="germany">Niemcy</option>
                 <option value="france">Francja</option>
             </select>
             <br>
-            <label for="email1">Adres e-mail:</label>
-            <input type="email" id="email1" name="email" size="20">
-            <br>
+            <label class="form1" for="email1">Adres e-mail:</label>
+            <input class="input1"  type="email" id="email1" name="email" size="20">
+            </p>
 
             <h4>Zamawiam tutorial z języka:</h4>
             <input type="checkbox" id="checkbox1" name="lang" value="PHP">
-            <label for="checkbox1">PHP</label>
+            <label class="checkbox" for="checkbox1">PHP</label>
             <input type="checkbox" id="checkbox2" name="lang" value="C/C++">
-            <label for="checkbox2">C/C++</label>
+            <label class="checkbox" for="checkbox2">C/C++</label>
             <input type="checkbox" id="checkbox3" name="lang" value="Java">
-            <label for="checkbox3">Java</label>
+            <label class="checkbox" for="checkbox3">Java</label>
             <br>
 
             <h4>Sposób zapłaty: </h4>
             <input type="radio" id="radio1" name="payment" value="blik">
-            <label for="radio1">BLIK</label>
+            <label class="radio" for="radio1">BLIK</label>
             <input type="radio" id="radio2" name="payment" value="visa">
-            <label for="radio2">VISA</label>
+            <label class="radio" for="radio2">VISA</label>
             <input type="radio" id="radio3" name="payment" value="bank">
-            <label for="radio3">przelewy24</label>
+            <label class="radio" for="radio3">przelewy24</label>
             <p>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Anuluj">
+                <input class="button" type="submit" value="Submit">
+                <input class="button" type="reset" value="Anuluj">
             </p>
+            <br>
         </form>
+        <br>
     </div>
-    <br>
     <div id="stopka">&copy;PW</div>
 </div>
 </body>

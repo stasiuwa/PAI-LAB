@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+<link rel="stylesheet"  href="CSS/style.css"     type="text/css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +27,7 @@
             <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zwartaw wierszu)</li>
         </ul>
         <h3>Przykładowa tabela HTML</h3>
-        <br>
-        <table border="1"> <!-- border - przestarzały atrybut, zadziała jak dodamy style -->
+        <table> <!-- border - przestarzały atrybut, zadziała jak dodamy style -->
             <caption>Popularność języków programowania</caption>
             <thead>
                 <tr>
@@ -38,12 +38,14 @@
                     <th>luty 2023</th>
                     <th>luty 2022</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Python</td>
                     <td>1</td>
                     <td>2</td>
                 </tr>
-                <tr>
+                <tr class="parzysty">
                     <td>C</td>
                     <td>2</td>
                     <td>2</td>
@@ -53,7 +55,7 @@
                     <td>3</td>
                     <td>4</td>
                 </tr>
-                <tr>
+                <tr class="parzysty">
                     <td>Java</td>
                     <td>4</td>
                     <td>3</td>
@@ -63,13 +65,16 @@
                     <td>5</td>
                     <td>5</td>
                 </tr>
-                <tr>
-                    <td colspan="3">Na podstawie:<br> <a href="https://www.tiobe.com/tiobe-index">https://www.tiobe.com/tiobe-index</a></td>
-                </tr>
-            </thead>
+            </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Na podstawie:<br> <a href="https://www.tiobe.com/tiobe-index">https://www.tiobe.com/tiobe-index</a></td>
+                    </tr>
+                </tfoot>
         </table>
+        <br>
     </div>
-    <div id="stopka"><br>&copy;PW</div>
+    <div id="stopka">&copy;PW</div>
 </div>
 </body>
 </html>
