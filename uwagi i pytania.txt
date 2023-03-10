@@ -1,0 +1,3 @@
+1. jak ogarnąc ten pasek aby z paddingiem dociągał do boków i tak
+2. przybliżanie strony jak to ogarnać sensownie
+3. jak ten formularz mini ustawic na srodku niezaleznie od rozmiaru okna strony itd

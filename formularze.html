@@ -10,9 +10,17 @@
 <div id="kontener">
     <div id="banner">   <h1>Szybki kurs HTML</h1>   </div>
     <div id="menu">
-        <a href="index.html"> Podstawowe znaczniki</a>&nbsp;
-        <a href="tabele.html"> Tworzenie tabel</a>&nbsp;
-        <a href="formularze.html"> Budowa formularzy</a>
+        <ul id="nav">
+            <li><a href="index.html"> Podstawowe znaczniki</a></li>
+            <li><a href="tabele.html"> Tworzenie tabel</a></li>
+            <li><a href="formularze.html"> Formularze</a>
+                <ul>
+                    <li><a href="formularze.html"> Pola formularza </a></li>
+                    <li><a href="obliczenia.html"> Obliczenia w formularzu</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
     </div>
     <div id="tresc">
         <h2>Podstawowe znaczniki formularza HTML to:</h2>
@@ -67,6 +75,25 @@
             <br>
         </form>
         <br>
+    </div>
+    <div id="pasek">
+        <div class="box">
+            <h3>Walidatory:</h3>
+            <ul>
+                <li> <a href="http://validator.w3.org/">HTML </a></li>
+                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+            </ul>
+        </div>
     </div>
     <div id="stopka">&copy;PW</div>
 </div>
