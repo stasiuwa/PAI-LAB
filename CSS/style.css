@@ -1,47 +1,58 @@
-body{
-    background: cornflowerblue;
+body {
+    background: #a26182;
     color: black;
     box-shadow: 0 4px 10px 4px #454747;
 }
-#kontener{
-    background: lightyellow;
+
+#kontener {
+    background: #9c5887;
 }
+
 #nav {
     text-align: left;
     overflow: hidden;
     font-family: Calibri, Tahoma, serif;
 }
+
 ul#nav li {
-    border: darkslateblue solid 1px;
+    border: darkmagenta solid 1px;
     list-style-type: none;
     float: left;
-    background: #9eb1ff;
+    background: #db73d0;
     margin-left: 3px;
 }
+
 ul#nav li:hover {
-    border: #562fff solid 1px;
+    border: #db73d0 solid 1px;
     list-style-type: none;
     float: left;
-    background: #5a8fff;
+    background: #db73d0;
     margin-left: 3px;
 }
+
 ul#nav li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
-    color: yellow;
+    color: black;
 }
+
 ul#nav li li a {
     width: 160px;
 }
-ul#nav li li:hover { background: #7fa2ff }
+
+ul#nav li li:hover {
+    background: #db73d0
+}
+
 ul#nav li ul {
     overflow: hidden;
     display: none;
 }
+
 ul#nav li:hover ul {
     position: absolute;
-    background: darkslateblue;
+    background: darkmagenta;
     padding: 0;
     display: block;
     width: 177px;
@@ -53,8 +64,9 @@ ul#nav li:hover ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: darkslateblue solid 5px;
+    border-bottom: darkmagenta solid 5px;
 }
+
 /*#menu li {
     float: left;
     margin: 0;
@@ -79,104 +91,158 @@ ul#nav li:hover ul {
     text-decoration: none;
 }*/
 #tresc {
-    border-left: darkslateblue solid;
-    border-right: darkslateblue solid;
+    border-left: darkmagenta solid;
+    border-right: darkmagenta solid;
     float: left;
     width: 75%;
     padding: 1%;
-    background: #bdc2ff;
+    background: #bf74a9;
 }
+
 #pasek {
     float: right;
     width: 20%;
     padding: 1%;
 }
+
 #tresc ul {
     margin-left: 20px;
 }
+
 h1, h3 {
     margin: 0;
     padding: 0;
 }
+
 h1, h3, #stopka {
-    background: darkslateblue;
-    color: ghostwhite;
+    background: darkmagenta;
+    color: #ffd5e9;
     text-align: center;
     clear: both;
 }
+
 #stopka {
     padding: 5px 0 5px 0;
 }
+
 *.box {
-    background: #bdc2ff;
+    background: #db73d0;
     padding: 5px;
     margin: 5px;
     font-size: 90%;
-    border: darkslateblue solid;
+    border: darkmagenta solid;
 }
-h2 { margin-left: 20px; }
-*.stripe{
-    background: darkslateblue;
+
+h2 {
+    margin-left: 20px;
+}
+
+*.stripe {
+    background: darkmagenta;
     height: 22px;
 }
-#validation{
+
+#validation {
     padding: 10px;
     text-align: right;
     margin-right: 10px;
 }
+
 #validation a {
     margin-right: 10px;
     position: relative;
     bottom: 10px;
 }
 
-table {
-     background: lightblue;
-     text-align: center;
-     width: 96%;
-     margin: 2%;
-     border: 2pt solid darkblue;
- }
+#table1 {
+    background: lightblue;
+    text-align: center;
+    width: 96%;
+    margin: 2%;
+    border: 2pt solid darkblue;
+}
+
 caption {
     font-size: 120%;
     font-weight: bold;
 }
+
 tfoot, thead {
     background: darkblue;
     color: lightsteelblue;
     font-size: 110%;
     padding: 5pt;
 }
-tfoot a { color: white}
-td, th {
+
+tfoot a {
+    color: white
+}
+
+#table1 td, th {
     border: 1pt solid darkblue;
 }
+
 *.parzysty {
     background: dodgerblue;
 }
+
 form {
     position: relative;
-    background: #9eb1ff;
+    background: #d688cc;
     padding: 5px;
     border: 1px solid;
     max-width: 300px;
 }
-.form1, h4{
+
+.form1, h4 {
     font-weight: bold;
     font-size: 90%;
     margin-left: 10px;
 }
-*.button {margin-left: 10px}
+
+*.button {
+    margin-left: 10px
+}
+
 *.input1 {
     position: absolute;
     left: 120px;
 }
+
 #checkbox1, #checkbox2, #checkbox3 {
     margin-left: 30px;
 }
-*.checkbox { color: lightgoldenrodyellow; }
-*.checkbox-target {color: black;}
+
+*.checkbox {
+    color: lightgoldenrodyellow;
+}
+
+*.checkbox-target {
+    color: black;
+}
+
 #radio1, #radio2, #radio3 {
     margin-left: 20px;
 }
-*.radio { color: lightgoldenrodyellow}
+
+*.radio {
+    color: lightgoldenrodyellow
+}
+
+*.images {
+    box-shadow: 2px 2px 7px 2px #3b3b3b;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+*.images:hover {
+    opacity: 0.5;
+}
+
+#images_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
