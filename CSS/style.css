@@ -1,11 +1,11 @@
 body {
-    background: #a26182;
+    background: #9994ff;
     color: black;
     box-shadow: 0 4px 10px 4px #454747;
 }
 
 #kontener {
-    background: #9c5887;
+    background: #360a7b;
 }
 
 #nav {
@@ -15,18 +15,18 @@ body {
 }
 
 ul#nav li {
-    border: darkmagenta solid 1px;
+    border: #360a7b solid 1px;
     list-style-type: none;
     float: left;
-    background: #db73d0;
+    background: mediumslateblue;
     margin-left: 3px;
 }
 
 ul#nav li:hover {
-    border: #db73d0 solid 1px;
+    border: #360a7b solid 1px;
     list-style-type: none;
     float: left;
-    background: #db73d0;
+    background: darkmagenta;
     margin-left: 3px;
 }
 
@@ -34,7 +34,7 @@ ul#nav li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul#nav li li a {
@@ -42,7 +42,7 @@ ul#nav li li a {
 }
 
 ul#nav li li:hover {
-    background: #db73d0
+    background: darkmagenta;
 }
 
 ul#nav li ul {
@@ -64,7 +64,7 @@ ul#nav li:hover ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: darkmagenta solid 5px;
+    border-bottom: #25013d solid 5px;
 }
 
 /*#menu li {
@@ -91,12 +91,12 @@ ul#nav li:hover ul {
     text-decoration: none;
 }*/
 #tresc {
-    border-left: darkmagenta solid;
-    border-right: darkmagenta solid;
+    border-left: #25013d solid;
+    border-right: #25013d solid;
     float: left;
     width: 75%;
     padding: 1%;
-    background: #bf74a9;
+    background: #8eb0ff;
 }
 
 #pasek {
@@ -115,8 +115,8 @@ h1, h3 {
 }
 
 h1, h3, #stopka {
-    background: darkmagenta;
-    color: #ffd5e9;
+    background: #140046;
+    color: white;
     text-align: center;
     clear: both;
 }
@@ -126,11 +126,11 @@ h1, h3, #stopka {
 }
 
 *.box {
-    background: #db73d0;
+    background: #00d8ff;
     padding: 5px;
     margin: 5px;
     font-size: 90%;
-    border: darkmagenta solid;
+    border: #140046 solid;
 }
 
 h2 {
@@ -138,7 +138,7 @@ h2 {
 }
 
 *.stripe {
-    background: darkmagenta;
+    background: #140046;
     height: 22px;
 }
 
@@ -188,10 +188,11 @@ tfoot a {
 
 form {
     position: relative;
-    background: #d688cc;
+    background: #359ca8;
     padding: 5px;
     border: 1px solid;
     max-width: 300px;
+    margin-left: 50px;
 }
 
 .form1, h4 {
@@ -234,10 +235,12 @@ form {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
+
 }
 
 *.images:hover {
-    opacity: 0.5;
+    filter: brightness(130%);
+    transition: all 0.60s;
 }
 
 #images_table {
