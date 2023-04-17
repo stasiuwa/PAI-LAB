@@ -5,10 +5,16 @@ body {
 }
 
 #kontener {
+    display: flex;
+    flex-wrap: wrap;
     background: #360a7b;
 }
-
+#banner {
+    width: 100%;
+}
 #nav {
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     overflow: hidden;
     font-family: Calibri, Tahoma, serif;
@@ -17,7 +23,6 @@ body {
 ul#nav li {
     border: #360a7b solid 1px;
     list-style-type: none;
-    float: left;
     background: mediumslateblue;
     margin-left: 3px;
 }
@@ -25,7 +30,6 @@ ul#nav li {
 ul#nav li:hover {
     border: #360a7b solid 1px;
     list-style-type: none;
-    float: left;
     background: darkmagenta;
     margin-left: 3px;
 }
@@ -60,7 +64,6 @@ ul#nav li:hover ul {
 
 #menu {
     font-size: 18px;
-    float: left;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -93,20 +96,14 @@ ul#nav li:hover ul {
 #main {
     border-left: #25013d solid;
     border-right: #25013d solid;
-    float: left;
     width: 75%;
     padding: 1%;
     background: #8eb0ff;
 }
 
 #aside {
-    float: right;
     width: 20%;
     padding: 1%;
-}
-
-#main ul {
-    margin-left: 20px;
 }
 
 h1, h3 {
@@ -115,6 +112,7 @@ h1, h3 {
 }
 
 h1, h3, #footer {
+    width: 100%;
     background: #140046;
     color: white;
     text-align: center;
