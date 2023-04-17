@@ -23,7 +23,7 @@
             <li><a href="rwd.html">Strona RWD</a></li>
         </ul>
     </div>
-    <div id="tresc">
+    <div id="main">
         <h2>Podstawowe znaczniki formularza HTML to:</h2>
         <ul>
             <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
@@ -37,10 +37,10 @@
         <form action="mailto:s97765@pollub.edu.pl" method="post">
             <p>
             <label class="form1" for="surname">Nazwisko:</label>
-            <input class="input1" type="text" id="surname" name="surname" size="20">
+            <input class="input1" type="text" id="surname" name="surname" pattern="[A-Za-z]{3,30}" size="20" required>
             <br>
             <label class="form1" for="age">Wiek:</label>
-            <input class="input1"  type="number" id="age" name="age" size="20">
+            <input class="input1"  type="number" id="age" name="age" pattern="[1-9]{1}+[0-9]{1}" size="20" required>
             <br>
             <label class="form1" for="country">Państwo:</label>
             <select class="input1"  name="country" id="country">
@@ -50,7 +50,7 @@
             </select>
             <br>
             <label class="form1" for="email1">Adres e-mail:</label>
-            <input class="input1"  type="email" id="email1" name="email" size="20">
+            <input class="input1"  type="email" id="email1" name="email" placeholder="sample@mail.xx" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="20" required>
             </p>
 
             <h4>Zamawiam tutorial z języka:</h4>
@@ -77,7 +77,7 @@
         </form>
         <br>
     </div>
-    <div id="pasek">
+    <div id="aside">
         <div class="box">
             <h3>Walidatory:</h3>
             <ul>
@@ -96,7 +96,7 @@
             </ul>
         </div>
     </div>
-    <div id="stopka">&copy;PW</div>
+    <div id="footer">&copy;PW</div>
 </div>
 </body>
 </html>

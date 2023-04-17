@@ -90,7 +90,7 @@ ul#nav li:hover ul {
     background: #ecfdff;
     text-decoration: none;
 }*/
-#tresc {
+#main {
     border-left: #25013d solid;
     border-right: #25013d solid;
     float: left;
@@ -99,13 +99,13 @@ ul#nav li:hover ul {
     background: #8eb0ff;
 }
 
-#pasek {
+#aside {
     float: right;
     width: 20%;
     padding: 1%;
 }
 
-#tresc ul {
+#main ul {
     margin-left: 20px;
 }
 
@@ -114,14 +114,14 @@ h1, h3 {
     padding: 0;
 }
 
-h1, h3, #stopka {
+h1, h3, #footer {
     background: #140046;
     color: white;
     text-align: center;
     clear: both;
 }
 
-#stopka {
+#footer {
     padding: 5px 0 5px 0;
 }
 
@@ -193,6 +193,14 @@ form {
     border: 1px solid;
     max-width: 300px;
     margin-left: 50px;
+}
+form *.input1:invalid {
+    border-color: red;
+    border-radius: 5px;
+}
+form *.input1, *.input1:valid {
+    border-color: darkgreen;
+    border-radius: 5px;
 }
 
 .form1, h4 {
