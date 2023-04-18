@@ -1,15 +1,15 @@
 body {
-    background: #9994ff;
+    background: #3c0306;
     color: black;
-    box-shadow: 0 4px 10px 4px #454747;
+    box-shadow: 0 4px 10px 4px #1e0809;
 }
 
-#kontener {
+#container {
     display: flex;
     flex-wrap: wrap;
-    background: #360a7b;
+    background: #211f22;
 }
-#banner {
+#header {
     width: 100%;
 }
 #nav {
@@ -21,16 +21,16 @@ body {
 }
 
 ul#nav li {
-    border: #360a7b solid 1px;
+    border: #615e61 solid 1px;
     list-style-type: none;
-    background: mediumslateblue;
+    background: #413d3d;
     margin-left: 3px;
 }
 
 ul#nav li:hover {
-    border: #360a7b solid 1px;
+    border: black solid 1px;
     list-style-type: none;
-    background: darkmagenta;
+    background: red;
     margin-left: 3px;
 }
 
@@ -42,21 +42,21 @@ ul#nav li a {
 }
 
 ul#nav li li a {
-    width: 160px;
+    width: 100%;
 }
 
 ul#nav li li:hover {
-    background: darkmagenta;
+    background: red;
 }
 
 ul#nav li ul {
     overflow: hidden;
     display: none;
+    position: absolute;
 }
 
 ul#nav li:hover ul {
-    position: absolute;
-    background: darkmagenta;
+    background: red;
     padding: 0;
     display: block;
     width: 177px;
@@ -67,43 +67,34 @@ ul#nav li:hover ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: #25013d solid 5px;
+    border-bottom: black solid 5px;
 }
-
-/*#menu li {
-    float: left;
-    margin: 0;
-    list-style: none;
-    padding-right: 5px;
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 85%;
-}
-#menu a {
-    float: left;
-    display: block;
-    margin: 0;
-    padding: 4px 8px;
-    text-decoration: none;
-    border: darkslateblue solid 1px;
-    border-bottom: none;
-    background: #a7c0ff;
-    color: black;
-}
-#menu a:hover {
-    background: #ecfdff;
-    text-decoration: none;
-}*/
 #main {
-    border-left: #25013d solid;
-    border-right: #25013d solid;
+    color: #a4a1a1;
+    border-left: black solid;
+    border-right: black solid;
     width: 75%;
     padding: 1%;
-    background: #8eb0ff;
+    background: #323033;
 }
 
 #aside {
     width: 20%;
     padding: 1%;
+}
+#aside *.box {
+    background: #370001;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+    border: black solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px black;
+    color: red;
+    text-align: left;
+}
+#aside a {
+    color: #b97272;
 }
 
 h1, h3 {
@@ -113,30 +104,26 @@ h1, h3 {
 
 h1, h3, #footer {
     width: 100%;
-    background: #140046;
-    color: white;
+    background: #060113;
+    color: red;
     text-align: center;
     clear: both;
+}
+h2 {
+    margin-left: 20px;
+}
+h3 {
+    border-radius: 5px;
+    border: #510203 2px solid;
 }
 
 #footer {
     padding: 5px 0 5px 0;
 }
 
-*.box {
-    background: #00d8ff;
-    padding: 5px;
-    margin: 5px;
-    font-size: 90%;
-    border: #140046 solid;
-}
-
-h2 {
-    margin-left: 20px;
-}
-
 *.stripe {
-    background: #140046;
+    background: black;
+    border-radius: 5px;
     height: 22px;
 }
 
@@ -153,44 +140,51 @@ h2 {
 }
 
 #table1 {
-    background: lightblue;
+    background: black;
+    color: #c5c3c6;
     text-align: center;
     width: 96%;
     margin: 2%;
-    border: 2pt solid darkblue;
+    border: 2pt solid #ff0b00;
 }
-
+#table1 td, th {
+    border: 1pt solid #ff0b00;
+}
+#table1 tbody {
+    color: whitesmoke;
+}
+#table1 tbody tr:nth-child(even) {
+    background: lightslategray;
+}
+#table1 tbody tr:nth-child(odd) {
+    background: #54545a;
+}
 caption {
     font-size: 120%;
     font-weight: bold;
 }
 
 tfoot, thead {
-    background: darkblue;
-    color: lightsteelblue;
+    background: #232324;
+    color: #c8a19c;
     font-size: 110%;
     padding: 5pt;
 }
-
 tfoot a {
     color: white
 }
 
-#table1 td, th {
-    border: 1pt solid darkblue;
-}
-
-*.parzysty {
-    background: dodgerblue;
-}
-
 form {
+    box-sizing: content-box; /* nic nie robi xd */
+    margin: 0 auto;
     position: relative;
-    background: #359ca8;
+    background: #320100;
+    color: #bda4a3;
     padding: 5px;
-    border: 1px solid;
+    border: 5px solid #000000;
+    border-radius: 10px;
     max-width: 300px;
-    margin-left: 50px;
+    box-shadow: 1px 2px 15px black;
 }
 form *.input1:invalid {
     border-color: red;
@@ -199,6 +193,11 @@ form *.input1:invalid {
 form *.input1, *.input1:valid {
     border-color: darkgreen;
     border-radius: 5px;
+}
+*.input1{
+    position: absolute;
+    right: 5%;
+    width: 60%;
 }
 
 .form1, h4 {
@@ -211,9 +210,12 @@ form *.input1, *.input1:valid {
     margin-left: 10px
 }
 
-*.input1 {
-    position: absolute;
-    left: 120px;
+
+#country{
+    width: 70px;
+}
+#age{
+    width: 35px;
 }
 
 #checkbox1, #checkbox2, #checkbox3 {
@@ -241,11 +243,12 @@ form *.input1, *.input1:valid {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
+    filter: brightness(70%);
 
 }
 
 *.images:hover {
-    filter: brightness(130%);
+    filter: brightness(110%);
     transition: all 0.60s;
 }
 
@@ -254,4 +257,69 @@ form *.input1, *.input1:valid {
     align-items: center;
     justify-content: center;
     border: none;
+}
+@media screen and (max-width: 620px) {
+    #main, #menu {
+        font-size: small;
+    }
+    #main  {
+        width: 100%;
+    }
+    #aside {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #aside *.box {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 430px) {
+    #nav li {
+        margin-left: 0;
+        text-align: center;
+        width: 80%;
+        border-radius: 0;
+    }
+    ul#nav li:hover ul{
+        position: relative;
+        width: 100%;
+    }
+    ul#nav li li {
+        margin: 0 auto;
+        width: 100%;
+    }
+    ul#nav li ul li:hover{
+        margin:0 auto;
+    }
+}
+@media screen and (max-width: 360px) {
+    *.input1{
+        right: 5%;
+        width: 55%;
+    }
+    #aside *.box {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 254px) {
+    #nav li {
+
+        width: 80%;
+    }
+    *.input1{
+        right: 5%;
+        width: 40%;
+    }
+    #aside *.box {
+        width: 90%;
+    }
+    tfoot, thead {
+        font-size: 80%;
+        padding: 0;
+    }
+    #table1 {
+        margin: 2%;
+    }
 }

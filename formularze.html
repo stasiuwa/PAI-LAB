@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet"  href="CSS/style.css"    type="text/css">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <title>Szybki kurs HTML</title>
 </head>
 <body>
-<div id="kontener">
-    <div id="banner">   <h1>Szybki kurs HTML</h1>   </div>
+<div id="container">
+    <div id="header">   <h1>Szybki kurs HTML</h1>   </div>
     <div id="menu">
         <ul id="nav">
             <li><a href="index.html"> Podstawowe znaczniki</a></li>
@@ -36,10 +36,14 @@
         <form action="mailto:s97765@pollub.edu.pl" method="post">
             <p>
             <label class="form1" for="surname">Nazwisko:</label>
-            <input class="input1" type="text" id="surname" name="surname" pattern="[A-Za-z]{3,30}" size="20" required>
+            <input class="input1" type="text" id="surname" name="surname"
+                   pattern="([a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40})|
+                            ([a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40}\s[A-Za-z]{1,10}\s[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40})|
+                            ([a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40}[-][a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40})"
+                   required> <!-- pattern1 "nazwisko", pattern2 "pierwsze (vel, von, itp) drugie", pattern3 "pierwsze-drugie"-->
             <br>
             <label class="form1" for="age">Wiek:</label>
-            <input class="input1"  type="number" id="age" name="age" pattern="[1-9]{1}+[0-9]{1}" size="20" required>
+            <input class="input1"  type="text" inputmode="numeric" id="age" name="age" pattern="[1-9]{1}+[0-9]{2}" required>
             <br>
             <label class="form1" for="country">Państwo:</label>
             <select class="input1"  name="country" id="country">
@@ -48,8 +52,8 @@
                 <option value="france">Francja</option>
             </select>
             <br>
-            <label class="form1" for="email1">Adres e-mail:</label>
-            <input class="input1"  type="email" id="email1" name="email" placeholder="sample@mail.xx" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="20" required>
+            <label class="form1" for="email1">e-mail:</label>
+            <input class="input1"  type="email" id="email1" name="email" placeholder="sample@mail.xx" pattern="(([\w_]+)-*\.?)+@[\w](([\w]+)-?_?\.?)+([a-z]{2,4})$" required>
             </p>
 
             <h4>Zamawiam tutorial z języka:</h4>
