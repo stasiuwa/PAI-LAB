@@ -12,7 +12,7 @@ body {
 #header {
     width: 100%;
 }
-#nav {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
@@ -20,42 +20,42 @@ body {
     font-family: Calibri, Tahoma, serif;
 }
 
-ul#nav li {
+nav ul li {
     border: #615e61 solid 1px;
     list-style-type: none;
     background: #413d3d;
     margin-left: 3px;
 }
 
-ul#nav li:hover {
+nav ul li:hover {
     border: black solid 1px;
     list-style-type: none;
     background: red;
     margin-left: 3px;
 }
 
-ul#nav li a {
+nav ul li a {
     display: block;
     padding: 4pt;
     text-decoration: none;
     color: white;
 }
 
-ul#nav li li a {
+nav ul li li a {
     width: 100%;
 }
 
-ul#nav li li:hover {
+nav ul li li:hover {
     background: red;
 }
 
-ul#nav li ul {
+nav ul li ul {
     overflow: hidden;
     display: none;
     position: absolute;
 }
 
-ul#nav li:hover ul {
+nav ul li:hover ul {
     background: red;
     padding: 0;
     display: block;
@@ -69,7 +69,7 @@ ul#nav li:hover ul {
     padding: 0;
     border-bottom: black solid 5px;
 }
-#main {
+main {
     color: #a4a1a1;
     border-left: black solid;
     border-right: black solid;
@@ -77,15 +77,15 @@ ul#nav li:hover ul {
     padding: 1%;
     background: #323033;
 }
-#main, #menu {
+main, #menu {
     font-size: small;
 }
 
-#aside {
+aside {
     width: 20%;
     padding: 1%;
 }
-#aside *.box {
+aside *.box {
     background: #370001;
     padding: 5px;
     margin: 5px;
@@ -96,7 +96,7 @@ ul#nav li:hover ul {
     color: red;
     text-align: left;
 }
-#aside a {
+aside a {
     color: #b97272;
 }
 
@@ -120,12 +120,12 @@ h3 {
     border: #510203 2px solid;
 }
 
-#footer {
+footer {
     padding: 5px 0 5px 0;
 }
 
 *.stripe {
-    background: black;
+    background: #060113;
     border-radius: 5px;
     height: 22px;
 }
@@ -190,14 +190,16 @@ form {
     box-shadow: 1px 2px 15px black;
 }
 form *.input1:invalid {
-    border-color: red;
-    border-radius: 5px;
+    border-bottom: 2px solid red;
 }
 form *.input1, *.input1:valid {
-    border-color: darkgreen;
-    border-radius: 5px;
+    border-bottom: 2px solid green;
+
 }
 *.input1{
+    color: wheat;
+    border: none;
+    background: #320100;
     position: absolute;
     right: 5%;
     width: 60%;
@@ -260,41 +262,41 @@ form *.input1, *.input1:valid {
     transition: all 0.60s;
 }
 @media screen and (min-width: 430px){
-    ul#nav li ul {
+    nav ul li ul {
         top: 1%;
     }
 }
 @media screen and (max-width: 620px) {
 
-    #main  {
+    main  {
         width: 100%;
     }
-    #aside {
+    aside {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
     }
-    #aside *.box {
+    aside *.box {
         width: 30%;
     }
 }
 @media screen and (max-width: 430px) {
-    #nav li {
+    nav li {
         margin-left: 0;
         text-align: center;
         width: 80%;
         border-radius: 0;
     }
-    ul#nav li:hover ul{
+    nav ul li:hover ul{
         position: relative;
         width: 100%;
     }
-    ul#nav li li {
+    nav ul li li {
         margin: 0 auto;
         width: 100%;
     }
-    ul#nav li ul li:hover{
+    nav ul li ul li:hover{
         margin:0 auto;
     }
 }
@@ -303,12 +305,12 @@ form *.input1, *.input1:valid {
         right: 5%;
         width: 55%;
     }
-    #aside *.box {
+    aside *.box {
         width: 35%;
     }
 }
 @media screen and (max-width: 254px) {
-    #nav li {
+    nav ul li {
 
         width: 80%;
     }
@@ -316,7 +318,7 @@ form *.input1, *.input1:valid {
         right: 5%;
         width: 40%;
     }
-    #aside *.box {
+    aside *.box {
         width: 90%;
     }
     tfoot, thead {
