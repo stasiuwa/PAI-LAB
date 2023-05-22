@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"   content="width=device-width, initial-scale=1.0">
     <title>Szybki Kurs HTML</title>
+    <script src="JS/functions.js"></script>
 </head>
 <body>
 <div id="container">
@@ -19,7 +20,6 @@
                         <li><a href="formularze.html"> Pola formularza </a></li>
                         <li><a href="obliczenia.html"> Obliczenia w formularzu</a></li>
                         <li><a href="kalkulator.html"> Kalkulator</a> </li>
-
                     </ul>
                 </li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -27,35 +27,32 @@
         </nav>
     </div>
     <main>
-        <h3>GALERIA ZDJĘĆ</h3>
-        <div id="images_table">
-                <a href="images/photos/obraz1.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz1.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz2.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz2.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz3.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz3.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz4.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz4.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz5.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz5.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz6.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz6.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz7.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz7.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz8.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz8.jpg" alt="image1">
-                </a>
-                <a href="images/photos/obraz9.jpg" target="_blank">
-                    <img class="images" src="images/thumbnails/obraz9.jpg" alt="image1">
-                </a>
+        <h3>KALKULATOR:</h3><br><br>
+        <div id="calc">
+        <fieldset>
+        <p>
+            <label for="num1">X:</label>
+            <input class="input3"  type="number" inputmode="numeric" id="num1" name="number 1" required>
+        </p>
+
+        <p>
+            <label for="num2">Y:</label>
+            <input class="input3"  type="number" inputmode="numeric" id="num2" name="number 2" required>
+        </p>
+        <p>
+            <button class="calc" onclick="chooseOperation('+')" id="add">+</button>
+            <button class="calc" onclick="chooseOperation('-')" id="sub">-</button>
+            <button class="calc" onclick="chooseOperation('*')" id="mul">*</button>
+            <button class="calc" onclick="chooseOperation('/')" id="div">/</button>
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="calc_result"></label>
+            <input type="number" id="calc_result" name="result" disabled>
+            &nbsp;
+            <button onclick="clear_numbs()">&#128473</button>
+        </p>
+        </fieldset>
         </div>
     </main>
     <aside>
@@ -79,5 +76,6 @@
     </aside>
     <footer>&copy;PW</footer>
 </div>
+    <script src="JS/functions.js"></script>
 </body>
 </html>

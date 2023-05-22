@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"   content="width=device-width, initial-scale=1.0">
     <title>Szybki Kurs HTML</title>
+    <script src="JS/functions.js"></script>
 </head>
 <body>
     <div id="container">
@@ -18,13 +19,37 @@
                         <ul>
                             <li><a href="formularze.html"> Pola formularza </a></li>
                             <li><a href="obliczenia.html"> Obliczenia w formularzu</a></li>
+                            <li><a href="kalkulator.html"> Kalkulator</a> </li>
                         </ul>
                     </li>
                     <li><a href="galeria.html">Galeria</a></li>
                 </ul>
             </nav>
         </div>
-<!--        <div id="tresc"></div>-->
+        <main>
+            <h2>Obliczanie raty przy spłacie pożyczki:</h2>
+            <div id="credit">
+                <p>
+                    <label for="loan">Kwota pożyczki:</label>
+                    <input class="input2"  type="number" inputmode="numeric" id="loan" name="loan amount" pattern="([1-9]{1}[0-9]*)" required>
+                </p>
+                <p>
+                    <label for="rate">Oprocentowanie:</label>
+                    <input class="input2"  type="number" inputmode="numeric" id="rate" name="rate" pattern="([1-9]{1}[0-9]{0,2})" required>
+                </p>
+                <p>
+                    <label for="months">Ilość rat:</label>
+                    <input class="input2"  type="number" inputmode="numeric" id="months" name="loan months" pattern="([1-9]{1}[0-9]{0,2})" required>
+                </p><p>
+                    <label for="result">Obliczona rata:</label>
+                    <input class="input2"  type="number" id="result" disabled>
+                </p><br>
+                <p>
+                    <input class="button" onclick="credit()" type="button" value="Oblicz">
+                    <input class="button" type="reset" value="Anuluj">
+                </p>
+            </div>
+        </main>
         <aside>
             <div class="box">
                 <h3>Walidatory:</h3>

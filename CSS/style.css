@@ -105,7 +105,7 @@ h1, h3 {
     padding: 0;
 }
 
-h1, h3, #footer {
+h1, h3 {
     width: 100%;
     background: #060113;
     color: red;
@@ -121,6 +121,11 @@ h3 {
 }
 
 footer {
+    color: whitesmoke;
+    background: black;
+    position: relative;
+    text-align: center;
+    width: 100%;
     padding: 5px 0 5px 0;
 }
 
@@ -178,7 +183,6 @@ tfoot a {
 }
 
 form {
-    box-sizing: content-box; /* nic nie robi xd */
     margin: 0 auto;
     position: relative;
     background: #320100;
@@ -189,6 +193,7 @@ form {
     max-width: 300px;
     box-shadow: 1px 2px 15px black;
 }
+
 form *.input1:invalid {
     border-bottom: 2px solid red;
 }
@@ -205,17 +210,25 @@ form *.input1, *.input1:valid {
     width: 60%;
 }
 
+
 .form1, h4 {
     font-weight: bold;
     font-size: 90%;
     margin-left: 10px;
 }
-
 *.button {
     margin-left: 10px
 }
-
-
+#credit {
+    position: relative;
+}
+*.input2 {
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: #323033;
+    position: absolute;
+    left: 40%;
+}
 #country{
     width: 70px;
 }
@@ -260,6 +273,19 @@ form *.input1, *.input1:valid {
 *.images:hover {
     filter: brightness(110%);
     transition: all 0.60s;
+}
+#calc {
+    font-size: 150%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+*.input3{
+    width: 86.5%;
+}
+*.calc {
+    margin-left: 12%;
 }
 @media screen and (min-width: 430px){
     nav ul li ul {
